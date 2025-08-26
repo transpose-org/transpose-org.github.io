@@ -10,13 +10,13 @@ transpose-org.github.io/
 ├── index.html              # Home page
 ├── tdtoolkit.html         # TDToolkit components hub
 ├── data.html              # Data resources and access tiers (not added yet)
-├── governance.html        # Governance structure
-├── community.html         # Community resources
-├── contribute.html        # Contributing guidelines
+├── governance.html        # Governance structure (not added yet)
+├── community.html         # Community resources (not added yet)
+├── contribute.html        # Contributing guidelines (not added yet)
 ├── publications.html      # Publications and citations (not added yet)
-├── roadmap.html          # Development roadmap
-├── contact.html          # Contact information
-├── code-of-conduct.html  # Code of conduct
+├── roadmap.html          # Development roadmap (not added yet)
+├── contact.html          # Contact information (not added yet)
+├── code-of-conduct.html  # Code of conduct (not added yet)
 ├── assets/
 │   ├── css/
 │   │   └── style.css     # All styles (< 200 lines)
