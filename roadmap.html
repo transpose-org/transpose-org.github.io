@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - TRANSPOSE</title>
+    <meta name="description" content="Development roadmap and future milestones for TRANSPOSE TDToolkit components.">
+    <meta property="og:title" content="Roadmap - TRANSPOSE">
+    <meta property="og:description" content="Future development plans for travel demand modeling ecosystem">
+    <meta property="og:image" content="/assets/og.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-brand">
+                <a href="/">TRANSPOSE</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/tdtoolkit.html">TDToolkit</a></li>
+                <li><a href="/data.html">Data</a></li>
+                <li><a href="/governance.html">Governance</a></li>
+                <li><a href="/community.html">Community</a></li>
+                <li><a href="/contribute.html">Contribute</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/roadmap.html" class="active">Roadmap</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Development Roadmap</h1>
+                <p class="lead">
+                    Track ongoing development, upcoming features, and long-term vision for the TRANSPOSE ecosystem.
+                </p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>Q1 2025 Milestones</h2>
+                
+                <div class="roadmap-component">
+                    <h3>DCMBench</h3>
+                    <ul>
+                        <li>Release v1.0 with stabilized API and schema</li>
+                        <li>Add support for nested logit and mixed logit models</li>
+                        <li>Integrate automated data quality checks</li>
+                        <li>Expand dataset collection with 3 new metropolitan regions</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-component">
+                    <h3>ML-DCM-Bench</h3>
+                    <ul>
+                        <li>Implement standardized cross-validation protocols</li>
+                        <li>Add transformer-based baseline models</li>
+                        <li>Create leaderboard system for model submissions</li>
+                        <li>Release comprehensive evaluation metrics package</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-component">
+                    <h3>TransitCast</h3>
+                    <ul>
+                        <li>Real-time GTFS-RT integration</li>
+                        <li>Multi-modal journey planning support</li>
+                        <li>Weather and event impact modeling</li>
+                        <li>Deploy demo instance with sample transit agency data</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-component">
+                    <h3>DNN-Econ</h3>
+                    <ul>
+                        <li>Welfare change calculation module</li>
+                        <li>Cross-elasticity extraction for neural networks</li>
+                        <li>Visualization toolkit for economic interpretations</li>
+                        <li>Integration with SHAP and LIME for explainability</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-component">
+                    <h3>ASU-DNN</h3>
+                    <ul>
+                        <li>PyTorch Lightning refactor for better scalability</li>
+                        <li>Distributed training support</li>
+                        <li>AutoML integration for hyperparameter tuning</li>
+                        <li>Pre-trained models for common choice contexts</li>
+                    </ul>
+                </div>
+
+                <h2>Q2-Q3 2025 Priorities</h2>
+                <div class="priorities">
+                    <h3>Infrastructure</h3>
+                    <ul>
+                        <li>Unified CLI tool for all TDToolkit components</li>
+                        <li>Cloud-based computation platform (AWS/GCP integration)</li>
+                        <li>Automated benchmarking pipeline with nightly runs</li>
+                        <li>Container orchestration for reproducible environments</li>
+                    </ul>
+
+                    <h3>Data & Privacy</h3>
+                    <ul>
+                        <li>Differential privacy implementation for sensitive datasets</li>
+                        <li>Synthetic data generation toolkit</li>
+                        <li>Federated learning framework for multi-agency collaboration</li>
+                        <li>GDPR and CCPA compliance tools</li>
+                    </ul>
+
+                    <h3>New Components</h3>
+                    <ul>
+                        <li><strong>ActivitySim-Bridge:</strong> Integration with activity-based models</li>
+                        <li><strong>TDViz:</strong> Interactive visualization library for choice models</li>
+                        <li><strong>CausalChoice:</strong> Causal inference toolkit for policy evaluation</li>
+                    </ul>
+                </div>
+
+                <h2>Long-term Vision (2026+)</h2>
+                <div class="vision">
+                    <p>
+                        TRANSPOSE aims to become the standard platform for travel demand modeling research and practice,
+                        fostering collaboration between academia, public agencies, and industry partners. Key initiatives include:
+                    </p>
+                    <ul>
+                        <li>Global expansion with region-specific models and datasets</li>
+                        <li>Integration with smart city platforms and real-time data streams</li>
+                        <li>Quantum computing experiments for large-scale optimization</li>
+                        <li>Foundation models for transfer learning across cities</li>
+                        <li>Automated model selection and ensemble methods</li>
+                        <li>Climate impact assessment tools for transportation planning</li>
+                    </ul>
+                </div>
+
+                <h2>Open RFCs</h2>
+                <div class="rfcs">
+                    <p>Active Requests for Comments from the community:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>RFC #</th>
+                                <th>Title</th>
+                                <th>Status</th>
+                                <th>Discussion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RFC-001</td>
+                                <td>Standardized Model Serialization Format</td>
+                                <td><span class="tag tag-review">In Review</span></td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>RFC-002</td>
+                                <td>Multi-language Support (R, Julia)</td>
+                                <td><span class="tag tag-draft">Draft</span></td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>RFC-003</td>
+                                <td>GPU Acceleration Standards</td>
+                                <td><span class="tag tag-review">In Review</span></td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>RFC-004</td>
+                                <td>Time-series Choice Model Extensions</td>
+                                <td><span class="tag tag-draft">Draft</span></td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Call for Collaborators</h2>
+                <div class="collaborators">
+                    <p>We're actively seeking contributors for these high-priority items:</p>
+                    <div class="grid grid-2">
+                        <div class="collab-item">
+                            <h4>Documentation Writers</h4>
+                            <p>Help create tutorials, user guides, and API documentation for TDToolkit components.</p>
+                        </div>
+                        <div class="collab-item">
+                            <h4>Data Partners</h4>
+                            <p>Share anonymized travel survey data or help establish data sharing agreements.</p>
+                        </div>
+                        <div class="collab-item">
+                            <h4>Model Validators</h4>
+                            <p>Test components against real-world scenarios and provide performance feedback.</p>
+                        </div>
+                        <div class="collab-item">
+                            <h4>DevOps Engineers</h4>
+                            <p>Improve CI/CD pipelines, containerization, and deployment infrastructure.</p>
+                        </div>
+                    </div>
+                    <p>
+                        <a href="/contribute.html" class="btn btn-primary">Get Involved</a>
+                    </p>
+                </div>
+
+                <h2>Track Progress</h2>
+                <p>
+                    Follow development progress and participate in planning:
+                </p>
+                <ul>
+                    <li><a href="https://github.com/orgs/transpose-org/projects" target="_blank" rel="noopener">GitHub Project Boards</a></li>
+                    <li><a href="#">Quarterly Planning Meetings</a> (open to community)</li>
+                    <li><a href="#">Development Blog</a> with technical deep-dives</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TRANSPOSE | <a href="https://github.com/transpose-org" target="_blank" rel="noopener">GitHub</a> | <a href="mailto:maintainers@transpose.org">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

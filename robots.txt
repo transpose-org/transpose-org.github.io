@@ -1,0 +1,6 @@
+# robots.txt for https://transpose-org.github.io/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://transpose-org.github.io/sitemap.xml

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute - TRANSPOSE</title>
+    <meta name="description" content="Contributing guidelines for TRANSPOSE TDToolkit components and ecosystem development.">
+    <meta property="og:title" content="Contribute - TRANSPOSE">
+    <meta property="og:description" content="Help build the open travel demand modeling ecosystem">
+    <meta property="og:image" content="/assets/og.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-brand">
+                <a href="/">TRANSPOSE</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/tdtoolkit.html">TDToolkit</a></li>
+                <li><a href="/data.html">Data</a></li>
+                <li><a href="/governance.html">Governance</a></li>
+                <li><a href="/community.html">Community</a></li>
+                <li><a href="/contribute.html" class="active">Contribute</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/roadmap.html">Roadmap</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contributing to TRANSPOSE</h1>
+                <p class="lead">
+                    Help advance travel demand modeling by contributing code, documentation, data, or expertise. 
+                    We welcome contributors at all skill levels.
+                </p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>Development Setup</h2>
+                <p>
+                    Most TDToolkit components are implemented in Python. Here's how to set up your development environment:
+                </p>
+                
+                <h3>Using Conda</h3>
+                <pre><code># Clone the repository
+git clone https://github.com/transpose-org/[component-name].git
+cd [component-name]
+
+# Create conda environment
+conda env create -f environment.yml
+conda activate tdtoolkit
+
+# Install development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest tests/</code></pre>
+
+                <h3>Using Poetry</h3>
+                <pre><code># Clone the repository
+git clone https://github.com/transpose-org/[component-name].git
+cd [component-name]
+
+# Install dependencies
+poetry install
+
+# Activate virtual environment
+poetry shell
+
+# Run tests
+poetry run pytest</code></pre>
+
+                <h3>Pre-commit Hooks</h3>
+                <p>We use pre-commit hooks to maintain code quality:</p>
+                <pre><code># Install pre-commit hooks
+pre-commit install
+
+# Run hooks manually
+pre-commit run --all-files</code></pre>
+
+                <h2>Pull Request Guidelines</h2>
+                <p>
+                    We follow these guidelines to maintain code quality and ensure smooth collaboration:
+                </p>
+                <ul>
+                    <li><strong>Keep PRs focused:</strong> One feature or bug fix per PR. Small, scoped changes are easier to review.</li>
+                    <li><strong>Write tests:</strong> All new features must include unit tests. Bug fixes should include regression tests.</li>
+                    <li><strong>Update documentation:</strong> Include docstrings, update README if needed, and add user guide entries for new features.</li>
+                    <li><strong>Follow style guides:</strong> Python code follows PEP 8. Use Black for formatting and flake8 for linting.</li>
+                    <li><strong>Write clear commit messages:</strong> Use conventional commits format (feat:, fix:, docs:, etc.)</li>
+                </ul>
+
+                <h3>PR Process</h3>
+                <ol>
+                    <li>Fork the repository and create a feature branch</li>
+                    <li>Make your changes with appropriate tests</li>
+                    <li>Run the test suite locally</li>
+                    <li>Push to your fork and open a PR against the main branch</li>
+                    <li>Address review feedback promptly</li>
+                    <li>Celebrate when merged!</li>
+                </ol>
+
+                <h2>Testing Standards</h2>
+                <p>All components maintain high test coverage:</p>
+                <ul>
+                    <li>Unit tests for individual functions and classes</li>
+                    <li>Integration tests for component interactions</li>
+                    <li>Benchmark tests to prevent performance regressions</li>
+                    <li>Documentation tests for code examples</li>
+                </ul>
+                <pre><code># Run full test suite
+pytest
+
+# Run with coverage
+pytest --cov=tdtoolkit --cov-report=html
+
+# Run specific test file
+pytest tests/test_models.py
+
+# Run benchmarks
+pytest benchmarks/ --benchmark-only</code></pre>
+
+                <h2>Code Style</h2>
+                <p>Consistent style across all TDToolkit components:</p>
+                <pre><code># Format code with Black
+black src/ tests/
+
+# Check style with flake8
+flake8 src/ tests/
+
+# Type checking with mypy
+mypy src/
+
+# Sort imports
+isort src/ tests/</code></pre>
+
+                <h2>Good First Issues</h2>
+                <p>
+                    New to TRANSPOSE? Start with issues labeled as "good first issue" across our repositories:
+                </p>
+                <p>
+                    <a href="https://github.com/orgs/transpose-org/projects" target="_blank" rel="noopener" class="btn btn-primary">Browse Good First Issues</a>
+                </p>
+                <p class="note">
+                    <strong>Note for maintainers:</strong> Update this link to point to the actual GitHub Projects board 
+                    or a filtered issue search like: https://github.com/search?q=org%3Atranspose-org+label%3A%22good+first+issue%22+state%3Aopen
+                </p>
+
+                <h2>Types of Contributions</h2>
+                <div class="grid grid-2">
+                    <div class="contribution-type">
+                        <h3>Code</h3>
+                        <p>Fix bugs, implement features, optimize performance, or add new models.</p>
+                    </div>
+                    <div class="contribution-type">
+                        <h3>Documentation</h3>
+                        <p>Improve user guides, API docs, tutorials, or translate documentation.</p>
+                    </div>
+                    <div class="contribution-type">
+                        <h3>Data</h3>
+                        <p>Contribute datasets, validation cases, or benchmark scenarios.</p>
+                    </div>
+                    <div class="contribution-type">
+                        <h3>Testing</h3>
+                        <p>Report bugs, add test cases, or improve CI/CD pipelines.</p>
+                    </div>
+                </div>
+
+                <h2>Getting Help</h2>
+                <p>
+                    Need assistance with your contribution?
+                </p>
+                <ul>
+                    <li>Check component-specific CONTRIBUTING.md files</li>
+                    <li>Join our community discussions</li>
+                    <li>Attend office hours (Wednesdays 3-4 PM ET)</li>
+                    <li>Tag @transpose-maintainers in your PR for guidance</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TRANSPOSE | <a href="https://github.com/transpose-org" target="_blank" rel="noopener">GitHub</a> | <a href="mailto:maintainers@transpose.org">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

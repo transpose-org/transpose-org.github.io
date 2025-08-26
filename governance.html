@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governance - TRANSPOSE</title>
+    <meta name="description" content="TRANSPOSE governance structure, decision-making processes, and community guidelines.">
+    <meta property="og:title" content="Governance - TRANSPOSE">
+    <meta property="og:description" content="Open governance for travel demand modeling ecosystem">
+    <meta property="og:image" content="/assets/og.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-brand">
+                <a href="/">TRANSPOSE</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/tdtoolkit.html">TDToolkit</a></li>
+                <li><a href="/data.html">Data</a></li>
+                <li><a href="/governance.html" class="active">Governance</a></li>
+                <li><a href="/community.html">Community</a></li>
+                <li><a href="/contribute.html">Contribute</a></li>
+                <li><a href="/publications.html">Publications</a></li>
+                <li><a href="/roadmap.html">Roadmap</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Governance</h1>
+                <p class="lead">
+                    TRANSPOSE operates under an open governance model designed to ensure transparency, 
+                    inclusivity, and sustainable development of our travel demand modeling ecosystem.
+                </p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>Mission & Scope</h2>
+                <p>
+                    TRANSPOSE aims to advance travel demand modeling through open collaboration, reproducible research,
+                    and standardized benchmarking. We govern the development and maintenance of TDToolkit components,
+                    data access protocols, and community standards while fostering innovation in both classical and
+                    machine learning approaches to transportation modeling.
+                </p>
+
+                <h2>Organizational Structure</h2>
+                
+                <h3>Steering Committee</h3>
+                <p>
+                    The Steering Committee provides strategic direction and ensures alignment with the broader
+                    transportation research community. Members serve two-year terms and represent diverse institutions
+                    including universities, public agencies, and industry partners.
+                </p>
+
+                <h3>Maintainers</h3>
+                <p>
+                    Component maintainers have commit access to specific TDToolkit repositories and are responsible
+                    for code review, release management, and technical decisions within their component's scope.
+                    Maintainers are nominated based on sustained contributions and technical expertise.
+                </p>
+
+                <h3>Working Groups</h3>
+                <div class="grid grid-2">
+                    <div class="working-group">
+                        <h4>Data Working Group</h4>
+                        <p>Oversees data governance policies, access tier definitions, and privacy preservation standards.</p>
+                    </div>
+                    <div class="working-group">
+                        <h4>Benchmarking Working Group</h4>
+                        <p>Maintains evaluation protocols, metric definitions, and ensures reproducibility across benchmarks.</p>
+                    </div>
+                    <div class="working-group">
+                        <h4>Methods Working Group</h4>
+                        <p>Reviews new methodological contributions and maintains standards for model implementations.</p>
+                    </div>
+                    <div class="working-group">
+                        <h4>Infrastructure Working Group</h4>
+                        <p>Manages CI/CD pipelines, documentation systems, and computational resource allocation.</p>
+                    </div>
+                </div>
+
+                <h2>Decision-Making Process</h2>
+                <p>
+                    TRANSPOSE follows a lazy consensus model for most decisions. Proposals are considered approved
+                    if no objections are raised within the review period (typically 72 hours for minor changes,
+                    one week for significant changes).
+                </p>
+                <ul>
+                    <li><strong>Minor changes:</strong> Bug fixes, documentation updates, dependency updates</li>
+                    <li><strong>Significant changes:</strong> API modifications, new features, architectural decisions</li>
+                    <li><strong>Breaking changes:</strong> Require RFC (Request for Comments) process with two-week review period</li>
+                </ul>
+                <p>
+                    When consensus cannot be reached, the Steering Committee may call for a vote among maintainers.
+                    Decisions require a simple majority, with the Committee chair holding a tie-breaking vote.
+                </p>
+
+                <h2>Release Cadence</h2>
+                <p>
+                    TDToolkit components follow semantic versioning (MAJOR.MINOR.PATCH) with coordinated releases:
+                </p>
+                <ul>
+                    <li><strong>Patch releases:</strong> As needed for bug fixes and security updates</li>
+                    <li><strong>Minor releases:</strong> Monthly for new features and improvements</li>
+                    <li><strong>Major releases:</strong> Annually with potential breaking changes</li>
+                    <li><strong>Roadmap reviews:</strong> Quarterly to assess progress and adjust priorities</li>
+                </ul>
+
+                <h2>Security & Responsible Disclosure</h2>
+                <p>
+                    Security vulnerabilities should be reported privately to allow for coordinated disclosure and patching.
+                    We follow a 90-day disclosure timeline and credit researchers who report vulnerabilities responsibly.
+                </p>
+                <p>
+                    <a href="mailto:security@transpose.org" class="btn btn-secondary">Report Security Issue</a>
+                </p>
+
+                <h2>Code of Conduct</h2>
+                <p>
+                    All TRANSPOSE participants are expected to follow our Code of Conduct, which outlines
+                    standards for respectful collaboration and procedures for addressing violations.
+                </p>
+                <p>
+                    <a href="/code-of-conduct.html" class="btn btn-primary">View Code of Conduct</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TRANSPOSE | <a href="https://github.com/transpose-org" target="_blank" rel="noopener">GitHub</a> | <a href="mailto:maintainers@transpose.org">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
