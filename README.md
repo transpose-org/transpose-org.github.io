@@ -2,53 +2,6 @@
 
 Static website for the TRANSPOSE organization and TDToolkit ecosystem.
 
-## Quick Start
-
-### Local Development
-
-Simply open `index.html` in your web browser:
-
-```bash
-# macOS
-open index.html
-
-# Linux
-xdg-open index.html
-
-# Windows
-start index.html
-```
-
-Or use a local server:
-
-```bash
-# Python 3
-python3 -m http.server 8000
-
-# Node.js
-npx serve
-
-# Then visit http://localhost:8000
-```
-
-## Deploy to GitHub Pages
-
-1. Create a new repository named `transpose-org.github.io` in the transpose-org organization
-
-2. Initialize and push this site:
-
-```bash
-git init
-git add -A
-git commit -m "Initial TRANSPOSE site"
-git branch -M main
-git remote add origin https://github.com/transpose-org/transpose-org.github.io.git
-git push -u origin main
-```
-
-3. GitHub Pages will automatically deploy from the main branch
-
-4. Your site will be live at: https://transpose-org.github.io/
 
 ## File Structure
 
@@ -56,11 +9,11 @@ git push -u origin main
 transpose-org.github.io/
 ├── index.html              # Home page
 ├── tdtoolkit.html         # TDToolkit components hub
-├── data.html              # Data resources and access tiers
+├── data.html              # Data resources and access tiers (not added yet)
 ├── governance.html        # Governance structure
 ├── community.html         # Community resources
 ├── contribute.html        # Contributing guidelines
-├── publications.html      # Publications and citations
+├── publications.html      # Publications and citations (not added yet)
 ├── roadmap.html          # Development roadmap
 ├── contact.html          # Contact information
 ├── code-of-conduct.html  # Code of conduct
@@ -131,20 +84,6 @@ Replace the placeholder `assets/og.png` with an actual image:
 3. Add the tagline
 4. Save as PNG with optimization
 
-### Performance
-
-- No external dependencies
-- No build step required
-- Total CSS < 200 lines
-- Images should be optimized
-- Works without JavaScript (mobile nav is enhancement)
-
-## Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers
 
 ## License
 
@@ -152,4 +91,4 @@ MIT License - See repository for details
 
 ## Contact
 
-For questions about the website: maintainers@transpose.org
+For questions about the website: guirado@berkeley.edu
