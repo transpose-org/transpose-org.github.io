@@ -9,14 +9,15 @@ Static website for the TRANSPOSE organization and TDToolkit ecosystem.
 transpose-org.github.io/
 ├── index.html              # Home page
 ├── tdtoolkit.html         # TDToolkit components hub
-├── data.html              # Data resources and access tiers (not added yet)
-├── governance.html        # Governance structure (not added yet)
-├── community.html         # Community resources (not added yet)
-├── contribute.html        # Contributing guidelines (not added yet)
-├── publications.html      # Publications and citations (not added yet)
-├── roadmap.html          # Development roadmap (not added yet)
-├── contact.html          # Contact information (not added yet)
-├── code-of-conduct.html  # Code of conduct (not added yet)
+├── contributors.html      # Contributors, governance, community info
+├── code-of-conduct.html  # Code of conduct
+├── data.html              # Data resources (legacy)
+├── governance.html        # Governance structure (legacy)
+├── community.html         # Community resources (legacy)
+├── contribute.html        # Contributing guidelines (legacy)
+├── publications.html      # Publications (legacy)
+├── roadmap.html          # Development roadmap (legacy)
+├── contact.html          # Contact information (legacy)
 ├── assets/
 │   ├── css/
 │   │   └── style.css     # All styles (< 200 lines)
@@ -52,9 +53,9 @@ To add a new component:
 
 ### Navigation
 
-The navigation menu is duplicated across all pages. To add or modify navigation items:
+The navigation menu is simplified to three main sections: Home, TDToolkit, and Contributors. To modify navigation items:
 
-1. Update the nav menu in all HTML files
+1. Update the nav menu in all active HTML files (index.html, tdtoolkit.html, contributors.html)
 2. Keep the order consistent
 3. Mark the current page with class `active`
 
